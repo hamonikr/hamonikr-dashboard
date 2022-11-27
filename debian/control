@@ -1,0 +1,14 @@
+Source: hamonikr-dashboard
+Section: System
+Priority: optional
+Maintainer: HamoniKR <pkg@hamonikr.org>
+Build-Depends: debhelper (>=9), build-essential, coreutils
+Standards-Version: 3.9.6
+Homepage: https://hamonikr.org
+
+Package: hamonikr-dashboard
+Architecture: all
+Depends: coreutils, yad
+Description: HamoniKR Dashboard
+  The dashboard displays installed applications into a Yad based window. 
+

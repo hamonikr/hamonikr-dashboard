@@ -1,0 +1,14 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=Applications
+Name[ko]=프로그램
+Comment=Run application
+Comment[ko]=프로그램 실행
+Exec=/usr/bin/hamonikr-dashboard
+Icon=hamonikr-dashboard
+Terminal=false
+MultipleArgs=false
+Type=Application
+Categories=Utility;
+#NoDisplay=true

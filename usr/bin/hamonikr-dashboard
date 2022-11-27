@@ -1,0 +1,17 @@
+#!/bin/bash
+
+if [ -d /tmp/hamonikr-dash ]; then
+	rm -rf /tmp/hamonikr-dash
+fi
+mkdir /tmp/hamonikr-dash
+cp -a /usr/share/applications/*.desktop /tmp/hamonikr-dash/
+cd /tmp/hamonikr-dash
+EXCLUDE=`find * -type f -exec grep -l 'NoDisplay=true' {} \;`
+rm -f $EXCLUDE
+
+yad --icons --icon-size=48 --read-dir=/tmp/hamonikr-dash --monitor --item-width=100\
+ --sort-by-name --center --undecorated --skip-taskbar --borders=20\
+ --button="Cancel!gtk-cancel":1 --buttons-layout=center --maximized
+
+rm -rf /tmp/hamonikr-dash
+exit 0
